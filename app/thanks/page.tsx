@@ -10,10 +10,10 @@ export default function ThanksPage() {
       <div className="mx-auto max-w-4xl rounded-[2rem] border border-[var(--border)] bg-[var(--surface-strong)] p-8 text-center shadow-[var(--shadow)] sm:p-12">
         <p className="text-sm font-semibold uppercase tracking-[0.26em] text-[var(--brand)]">Thank You</p>
         <h1 className="mt-4 text-4xl font-semibold tracking-tight text-[var(--foreground)] sm:text-5xl">
-          Wait... watch the video before you go
+          Congratulations
         </h1>
         <p className="mx-auto mt-6 max-w-2xl text-base leading-8 text-[var(--muted)] sm:text-lg">
-          Before your consultation, please watch this short video so you know what to do next.
+          Thank you for booking your spot for a free 1:1 consultation.
         </p>
 
         <div className="mt-10 overflow-hidden rounded-[2rem] border border-[var(--border)] bg-[linear-gradient(180deg,#ffffff_0%,#f6faed_100%)] p-3 shadow-[0_16px_40px_rgba(34,58,14,0.08)]">
