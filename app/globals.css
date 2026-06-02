@@ -1,16 +1,16 @@
 @import "tailwindcss";
 
 :root {
-  --background: #f7f7f1;
-  --foreground: #16210f;
-  --brand: #436f1f;
+  --background: #f6f8f0;
+  --foreground: #15210f;
+  --brand: #4a7a20;
   --brand-deep: #2f4f13;
-  --brand-soft: #e4edd8;
-  --surface: #fffef9;
+  --brand-soft: #e5f0d9;
+  --surface: #fdfdf9;
   --surface-strong: #ffffff;
-  --border: rgba(47, 79, 19, 0.12);
-  --muted: #66735a;
-  --shadow: 0 22px 70px rgba(30, 51, 12, 0.12);
+  --border: rgba(47, 79, 19, 0.13);
+  --muted: #5d6b57;
+  --shadow: 0 24px 70px rgba(28, 46, 12, 0.11);
 }
 
 html {
@@ -18,13 +18,14 @@ html {
 }
 
 body {
+  min-height: 100vh;
   background:
-    radial-gradient(circle at top left, rgba(95, 140, 45, 0.12), transparent 32%),
-    linear-gradient(180deg, #fbfcf7 0%, var(--background) 42%, #f4f5ec 100%);
+    radial-gradient(circle at top, rgba(102, 153, 51, 0.12), transparent 34%),
+    linear-gradient(180deg, #fbfcf8 0%, var(--background) 48%, #f2f5ea 100%);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Trebuchet MS", "Segoe UI", sans-serif;
 }
 
 ::selection {
-  background: rgba(67, 111, 31, 0.18);
+  background: rgba(74, 122, 32, 0.18);
 }

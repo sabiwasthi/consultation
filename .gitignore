@@ -1,1 +1,5 @@
-node_modules/ 
+node_modules/
+.next/
+dev-server.log
+dev-server-error.log
+data/

@@ -1,16 +1,33 @@
-export default function Urgency() {
+type UrgencyProps = {
+  steps: string[];
+};
+
+export default function Urgency({ steps }: UrgencyProps) {
   return (
-    <section className="px-4 py-18 sm:px-6 lg:px-8">
-      <div className="mx-auto max-w-6xl rounded-[2rem] border border-[rgba(67,111,31,0.18)] bg-[linear-gradient(135deg,rgba(67,111,31,0.12),rgba(255,255,255,0.95))] p-8 shadow-[0_18px_50px_rgba(30,51,12,0.08)] lg:flex lg:items-center lg:justify-between lg:gap-10 lg:p-10">
-        <div className="max-w-2xl">
-          <p className="text-sm font-semibold uppercase tracking-[0.24em] text-[var(--brand-deep)]">Limited Availability</p>
-          <h2 className="mt-4 text-3xl font-semibold tracking-tight sm:text-4xl">
-            Consultation slots are limited so each strategy can stay customized and focused.
+    <section className="px-4 py-20 sm:px-6 lg:px-8">
+      <div className="mx-auto max-w-6xl rounded-[2rem] border border-[var(--border)] bg-[linear-gradient(180deg,#fdfef9_0%,#f3f8e9_100%)] p-8 shadow-[0_24px_60px_rgba(34,58,14,0.08)] lg:p-12">
+        <div className="mx-auto max-w-3xl text-center">
+          <p className="text-sm font-semibold uppercase tracking-[0.26em] text-[var(--brand)]">
+            How The Free Consultation Works
+          </p>
+          <h2 className="mt-4 text-3xl font-semibold tracking-tight text-[var(--foreground)] sm:text-4xl">
+            A simple process that gives you more clarity before you spend more on ads
           </h2>
         </div>
-        <p className="mt-5 max-w-xl text-base leading-8 text-[var(--muted)] lg:mt-0">
-          If you want a clear growth direction without confusion, book your free consultation while slots are still open.
-        </p>
+
+        <div className="mt-10 grid gap-5 md:grid-cols-2 xl:grid-cols-5">
+          {steps.map((step, index) => (
+            <article
+              key={step}
+              className="rounded-[1.75rem] border border-[var(--border)] bg-white p-6 shadow-[0_12px_32px_rgba(34,58,14,0.06)]"
+            >
+              <div className="flex h-12 w-12 items-center justify-center rounded-2xl bg-[var(--brand)] text-lg font-semibold text-white">
+                {index + 1}
+              </div>
+              <p className="mt-5 text-base leading-8 text-[var(--foreground)]">{step}</p>
+            </article>
+          ))}
+        </div>
       </div>
     </section>
   );
