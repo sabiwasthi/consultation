@@ -27,25 +27,6 @@ export default function ThanksPage() {
           />
         </div>
 
-        <div className="mt-10 rounded-[2rem] border border-[var(--border)] bg-[linear-gradient(180deg,#f9fbf4_0%,#eef5e1_100%)] p-5 shadow-[0_14px_34px_rgba(34,58,14,0.05)] sm:p-7">
-          <div className="aspect-video overflow-hidden rounded-[1.5rem] border border-[var(--border)] bg-white">
-            {vimeoLink ? (
-              <iframe
-                src={vimeoLink}
-                title="Consultation next steps video"
-                allow="autoplay; fullscreen; picture-in-picture"
-                className="h-full w-full"
-              />
-            ) : (
-              <div className="flex h-full items-center justify-center px-6 text-center">
-                <p className="max-w-xl text-base leading-8 text-[var(--muted)]">
-                  Your Vimeo video link will go here as soon as you send it.
-                </p>
-              </div>
-            )}
-          </div>
-        </div>
-
         <div className="mt-8 flex flex-col items-center justify-center gap-4 sm:flex-row">
           <a
             href={whatsappLink || "#"}
