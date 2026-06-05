@@ -2,7 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 
 const vimeoLink = "";
-const whatsappLink = "";
+const whatsappLink = "https://call.whatsapp.com/voice/mVRm6GxGrsof1xqMvyFIbu";
 
 export default function ThanksPage() {
   return (
